@@ -3,9 +3,9 @@ h1{
 }
 .contenedor{
     width: 600px;
-    height: 600px;
+    height: 615px;
     margin: auto;
-    background-color: aqua;
+    background-color: black;
     border:solid grey 10px;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,8 @@ h1{
 div{
     border: solid 1px black;
     text-align: center;
+    justify-items: center;
+    border-radius: 5px;
 }
 
 .resultados{
@@ -22,8 +24,13 @@ div{
     flex-basis: 1;
     height: 100px;
     text-align: right;
-    background-color: blanchedalmond;
+    background-color:beige;
     font-size: 35px;
+    /* border: solid 3px black; */
+    border-top: solid 3px black;
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+
 }
 
 .numeros-tier{
@@ -32,7 +39,7 @@ div{
     flex-basis: 1;
     height: 100px;
     text-align: right;
-    background-color:chartreuse;
+    background-color:black;
     font-size: 35px;
     display: flex;
     flex-direction: row;
@@ -42,22 +49,22 @@ div{
     flex-grow: 2.6975;
     flex-grow: auto;
     flex-basis: 1;
-    background-color: brown;
+    background-color:cornflowerblue;
 }
 
 .operaciones{
     flex: 1;
-    background-color: darkmagenta;
+    background-color:coral;
 }
 
 .numeros{
     flex: 1;
-    background-color: darkblue;
-    /* border: solid 2px black; */
+    background-color:aquamarine;
 }
 
 .especiales{
-    /* border: solid 2px black; */
     width: 297px;
+    background-color: aquamarine;
+    /* align-content: center; */
+    /* justify-items: center; */
 }
-
