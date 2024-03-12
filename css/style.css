@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+}
+.contenedor{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-color: aqua;
+    border:solid grey 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    border: solid 1px black;
+    text-align: center;
+}
+
+.resultados{
+    flex-grow: auto;
+    flex-shrink: 1;
+    flex-basis: 1;
+    height: 100px;
+    text-align: right;
+    background-color: blanchedalmond;
+    font-size: 35px;
+}
+
+.numeros-tier{
+    flex-grow: auto;
+    flex-shrink: 1;
+    flex-basis: 1;
+    height: 100px;
+    text-align: right;
+    background-color:chartreuse;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.acciones{
+    flex-grow: 2.6975;
+    flex-grow: auto;
+    flex-basis: 1;
+    background-color: brown;
+}
+
+.operaciones{
+    flex: 1;
+    background-color: darkmagenta;
+}
+
+.numeros{
+    flex: 1;
+    background-color: darkblue;
+    /* border: solid 2px black; */
+}
+
+.especiales{
+    /* border: solid 2px black; */
+    width: 297px;
+}
+
