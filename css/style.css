@@ -11,7 +11,7 @@ h1{
     flex-direction: column;
 }
 
-div{
+div {
     border: solid 1px black;
     text-align: center;
     justify-items: center;
