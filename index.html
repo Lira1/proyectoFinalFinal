@@ -9,32 +9,32 @@
 <body>
     <h1>Proyecto Calculadora</h1>
     <div class="contenedor">
-        <div class="resultados"><p>35264.2</p></div>
+        <div class="resultados"><p id="resultados">35264.2</p></div>
         <div class="numeros-tier">
-            <button class="acciones"><p>AC</p></button>
+            <button class="acciones" onclick="clean();"><p>AC</p></button>
             <button class="operaciones"><p>/</p></button>
         </div>
         <div class="numeros-tier">
-            <button class="numeros"><p>7</p></button>
-            <button class="numeros"><p>8</p></button>
-            <button class="numeros"><p>9</p></button>
+            <button class="numeros" onclick="agregarNumero(7);"><p>7</p></button>
+            <button class="numeros" onclick="agregarNumero(8);"><p>8</p></button>
+            <button class="numeros" onclick="agregarNumero(9);"><p>9</p></button>
             <button class="operaciones"><p>*</p></button>
         </div>
         <div class="numeros-tier">
-            <button class="numeros"><p>4</p></button>
-            <button class="numeros"><p>5</p></button>
-            <button class="numeros"><p>6</p></button>
+            <button class="numeros" onclick="agregarNumero(4);"><p>4</p></button>
+            <button class="numeros" onclick="agregarNumero(5);"><p>5</p></button>
+            <button class="numeros" onclick="agregarNumero(6);"><p>6</p></button>
             <button class="operaciones"><p>-</p></button>
         </div>
         <div class="numeros-tier">
-            <button class="numeros"><p>1</p></button>
-            <button class="numeros"><p>2</p></button>
-            <button class="numeros"><p>3</p></button>
+            <button class="numeros" onclick="agregarNumero(1);"><p>1</p></button>
+            <button class="numeros" onclick="agregarNumero(2);"><p>2</p></button>
+            <button class="numeros" onclick="agregarNumero(3);"><p>3</p></button>
             <button class="operaciones"><p>+</p></button>
         </div>
         <div class="numeros-tier">
-            <button class="especiales"><p>0</p></button>
-            <button class="numeros"><p>.</p></button>
+            <button class="especiales" onclick="agregarNumero(0);"><p>0</p></button>
+            <button class="numeros" onclick="agregarNumero('.');"><p>.</p></button>
             <button class="operaciones"><p>=</p></button>
         </div>
     </div>
