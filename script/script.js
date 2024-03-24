@@ -15,7 +15,7 @@ function clean() {
 }
 
 function agregarNumero(numero) {
-    if (resultados.textContent === '0' && numero !== '.') {
+    if (resultados.textContent === '0' && numero !== '.' ) {
         resultados.textContent = numero;
     } else if (!isNaN(numero) || (numero === '.' && !puntoUsado)) {
         resultados.textContent += numero;
@@ -86,3 +86,21 @@ function getResult(operacion) {
             break;
     }
 }
+
+  document.addEventListener('keydown', (event) => {
+    let codeValue = event.code;
+    let digito = 0;
+    
+    if (codeValue==='NumpadDecimal')
+        digito = '.';
+    else
+        digito = codeValue.charAt(codeValue.length-1);
+    console.log('digito> '+digito);
+    console.log("codeValue: " + codeValue);
+    console.log(typeof(digito))
+    if(codeValue === 'Backspace')   
+        clean();
+    else if(!isNaN(digito) || codeValue === 'NumpadDecimal')
+        agregarNumero(digito);
+    
+  }, false);
